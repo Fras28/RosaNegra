@@ -1,0 +1,15 @@
+.carta{
+    padding-bottom: .5rem;  
+    }
+.granoCafe{
+    margin-top: 1.5rem;
+}
+
+.titleSection > svg{
+margin-bottom: 0;
+margin-left: 1rem;
+}
+
+.titleSection > svg {
+    margin-bottom: -7px;
+}

@@ -1,0 +1,31 @@
+.goBag{
+    position: sticky;
+    bottom: 10px;
+
+}
+.btnGoBag{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    border-radius: 24px;
+    background-color: #E88A23;
+    border: outset #E88A23 2px;
+    margin: auto;
+    align-items: center;
+    padding: 0 .5rem 0 .5rem;
+    box-shadow: 0px 0px 8px #E88A23;
+}
+
+.pedido{
+    margin: auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+.cantidad{
+    background-color: white;
+    padding: .3rem .7rem .3rem .7rem;
+    border-radius: 100%;
+    margin-left: 1rem;
+    color: black;
+}

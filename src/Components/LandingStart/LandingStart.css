@@ -1,0 +1,224 @@
+.LandingBack {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.LandingStartContainer {
+  height: 50%;
+}
+.landingStart {
+  max-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contAlerStart {
+  padding-top: 15rem;
+}
+
+.marcaLanging {
+  /* background-color: rgba(255, 255, 255, 0.541); */
+  padding: 1rem;
+}
+
+.nameCart {
+  color: black;
+  font-family: "Noto Serif Oriya", serif;
+}
+
+.Enter {
+  padding: 0.3em 1.8em;
+  border: 2px solid #fff;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  height: 3rem;
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.Enter::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: lightblue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 800ms ease-in-out;
+  z-index: -1;
+  opacity: 80%;
+}
+
+.Enter::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 800ms ease-in-out;
+  z-index: -1;
+  opacity: 60%;
+}
+
+.Enter:hover::after {
+  width: 37.5%;
+}
+
+.Enter:hover::before {
+  width: 37.5%;
+}
+.Enter:hover {
+  color: gold;
+  font-weight: 600;
+}
+.btnEnter {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.btnEnter2 {
+  margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.Btn2 {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  border: solid;
+  border-color: linear-gradient(
+    to right,
+    #77530a,
+    #ffd277,
+    #77530a,
+    #77530a,
+    #ffd277,
+    #77530a
+  );
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 250%;
+  background-position: left;
+  color: goldenrod;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.Btn {
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #77530a,
+    #ffd277,
+    #77530a,
+    #77530a,
+    #ffd277,
+    #77530a
+  );
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  margin-top: 2rem;
+  font-size: 18px; /* Ajusta el tamaño del texto según tu preferencia */
+}
+
+.Btn::before {
+  position: absolute;
+  content: "Ver Carta";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+  font-size: 1.2em; /* Ajusta el tamaño del texto según tu preferencia */
+}
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  .btnEnter {
+    margin-top: 6rem;
+  }
+
+  .buttonComander {
+    visibility: hidden;
+    display: none;
+  }
+  .LandingBack {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .BottomLanding {
+    padding-bottom: 5rem;
+  }
+
+  .contAlerStart {
+    padding-top: 5rem;
+  }
+}

@@ -1,0 +1,75 @@
+h1 {
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.subName {
+  color: white;
+  margin-top: 0;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  justify-content: space-between;
+  border-bottom: 1px solid orange;
+  background-image: url("../assets/bgNav.png");
+  min-height: 100px;
+}
+
+/*============= Search bar ==========*/
+.back {
+  margin-left: 0.5rem;
+  margin-top: 10px;
+}
+
+.back > svg {
+  margin-bottom: -2.5px;
+}
+
+.morton {
+  margin-top: 20px;
+}
+
+.backLink {
+  display: none;
+}
+
+.bakBagBtn {
+  display: none;
+}
+
+.linkRedes {
+  display: "flex";
+  flex-direction: "column";
+  gap: ".5rem";
+}
+
+@media (max-width: 600px) {
+  .back:hover {
+    box-shadow: 1px 2px 1px black;
+  }
+
+  .backLink {
+    display: block;
+  }
+
+  .nav {
+    padding: 1 0.5rem;
+    min-height: 60px;
+  }
+
+  .morton {
+    margin: auto;
+  }
+
+  .bakBagBtn {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+  }
+}

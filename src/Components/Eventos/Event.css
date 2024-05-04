@@ -1,0 +1,12 @@
+
+.cafeBg{
+    border-radius: 20px;
+
+}
+.conteinerLC{
+    /* height: 70vh; */
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+  }

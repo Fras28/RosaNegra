@@ -1,0 +1,31 @@
+.footy{
+margin-bottom: 1rem;
+
+
+} 
+.links{
+    margin-left: .5rem;
+    margin-right: .5rem; 
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+.redes{
+    fill:#EDB908;
+    
+}
+.wap{
+    fill: #03C100;
+}
+.contact{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Sono', sans-serif;
+    font-size: 1rem;
+    color: aliceblue;
+    margin-bottom: 0;
+margin-top: 0;
+}
+.linkC:hover .redes{
+    fill:#fbae61;
+}

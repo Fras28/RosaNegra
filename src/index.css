@@ -1,0 +1,95 @@
+
+
+body {
+  /* min-height: 100vh; */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* intento de dark mode a mi modo  */
+/* body{ background-color: #0a0113;} */
+/* body .titInicio{
+  background-color: #0a0113;
+  border: ridge orange 5px;
+
+}
+body .contCard{
+  background-color: #040008;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.25);
+}
+
+body .nav {
+  background-color: #040008;
+  fill: white;
+}
+body .nav   .logoColor {
+  fill: white;
+}
+body .titleSection{
+  background-color: #040008;
+  color: white;
+}
+body img {
+  outline: goldenrod ridge 5px;
+}
+body .btnPlus {
+  background-color: green;
+  color: #040008;
+}
+body .contBag{
+  background-color: #040008;
+  margin-top: 21%;
+}
+body .backBag{
+  background-color: rgba(255, 255, 255, 0.788);
+  border-radius: 32px;
+  border: orange ridge 5px;
+}
+body .masMenos {
+  background-color: orange;
+  color: #040008;
+}
+body .QrBag  {
+
+  outline: none;
+}
+body .titInicio p{
+  color: white;
+}
+body .sectioner > a {
+  background-color: #262a3df8;
+  border: orange dashed 1px;
+  color: white;
+}
+body .sectioner > a:active {
+  background-color: #262a3df8;
+  border: rgb(43, 255, 0) solid 1px;
+  color: white;
+}
+
+
+
+body .nameProd {
+  color: white;
+}
+body .detProd{
+  color: white;
+}
+
+ */
+
+/* intento de dark mode a mi modo  */
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
