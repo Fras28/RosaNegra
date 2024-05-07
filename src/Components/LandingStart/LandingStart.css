@@ -2,7 +2,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+
   display: flex;
   justify-content: center;
 }
@@ -94,8 +94,6 @@
   font-weight: 600;
 }
 .btnEnter {
-  margin-top: 15%;
-  margin-bottom: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,9 +196,7 @@
 }
 
 @media (max-width: 600px) {
-  .btnEnter {
-    margin-top: 6rem;
-  }
+
 
   .buttonComander {
     visibility: hidden;
@@ -210,15 +206,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
     display: flex;
     justify-content: center;
   }
   .BottomLanding {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 5rem;
+    gap: 1rem;
   }
 
   .contAlerStart {
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 }

@@ -7,6 +7,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import "./BtnNavidad.css";
 import { useSelector } from "react-redux";
+import Logo from "../assets/ElMundoParrilla-removebg-preview (2).png";
 const API = process.env.REACT_APP_API_STRAPI;
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -14,7 +15,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export default function AlertDialogSlide() {
   const [open, setOpen] = React.useState(false);
-const { comercio } = useSelector(state =>state.alldata)
+  const { comercio } = useSelector((state) => state.alldata);
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -37,7 +38,7 @@ const { comercio } = useSelector(state =>state.alldata)
               fillRule="evenodd"
               clipRule="evenodd"
               d="M244.973 659.333C103.973 619.427 0.666748 489.773 0.666748 336C0.666748 150.427 151.093 0 336.667 0C522.24 0 672.667 150.427 672.667 336C672.667 489.773 569.364 619.427 428.36 659.333L336.663 746.667L244.973 659.333ZM336.671 571.197C466.567 571.197 571.871 465.895 571.871 335.997C571.871 206.1 466.568 100.797 336.671 100.797C206.773 100.797 101.471 206.1 101.471 335.997C101.471 465.895 206.773 571.197 336.671 571.197ZM299.337 205.211C299.337 180.404 311.78 168.003 336.671 168.003C361.561 168.003 374.004 180.404 374.004 205.211C374.004 217.034 370.895 226.232 364.671 232.804C358.447 239.382 349.113 242.669 336.671 242.669C311.78 242.669 299.337 230.184 299.337 205.21V205.211ZM374.004 503.997H299.337V261.331H374.004V503.997Z"
-              fill="black"
+              fill="gold"
             />
           </svg>
         </button>
@@ -51,7 +52,7 @@ const { comercio } = useSelector(state =>state.alldata)
       >
         <DialogTitle className="infoNavi">
           <div>
-            <img    src={`${API}${comercio?.attributes?.logo?.data?.attributes?.url}`}  alt="logo Coqui Cakes" width="100px" />
+            <img src={Logo} alt="logo Coqui Cakes" width="100px" />
           </div>
           <div style={{ marginLeft: "30%" }}>
             <button className="exit" onClick={handleClose}>
@@ -61,7 +62,9 @@ const { comercio } = useSelector(state =>state.alldata)
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-         <pre>{comercio?.attributes?.presentacion}</pre>
+            Muchos son los secretos para elaborar los mejores platos de la
+            cocina argentina. El nuestro, es la pasión que dedicamos a la
+            preparación de los cortes de carne tradicionales de nuestro país.
           </DialogContentText>
         </DialogContent>
         <DialogActions> </DialogActions>

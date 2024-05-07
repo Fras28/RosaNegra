@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import AlertDialogSlide from "../BtnNavidad/BtnNavidad";
 import "./LandingStart.css";
 import { useDispatch, useSelector } from "react-redux";
-
+import Logo from "../assets/ElMundoParrilla-removebg-preview (2).png"
+import Carousel from "../assets/Carousel/Carousel";
+import Morton from "../assets/dog face.png"
 const API = process.env.REACT_APP_API_STRAPI;
 export const Inicio = (url) => {
   const dispatch = useDispatch();
@@ -34,6 +36,8 @@ export const Inicio = (url) => {
     console.log(url.location.pathname);
   }
 
+  const Logos = [Morton,Morton,Morton,Morton,Morton,Morton,Morton]
+
   return (
     <div
       className={`LandingBack ${
@@ -52,13 +56,12 @@ export const Inicio = (url) => {
               backgroundColor:`${comercio?.attributes?.rgb}`
             }}
           >
-            {comercio?.attributes?.msjInicio ||
-              "Consulta por nuestros desayunos y meriendas libres"}
+            {"Contamos con opción de productos Sin T.A.C.C. En caso de que lo necesites, por favor indicarlo al momento de ordenar."}
           </p>{" "}
         </div>
         <div className="BottomLanding">
           <img
-            src={`${API}${comercio?.attributes?.logo?.data?.attributes?.url}`}
+            src={Logo}
             alt=""
             style={{ maxWidth: "70%", margin: "auto", paddingTop:"2rem" }}
           />
@@ -70,14 +73,15 @@ export const Inicio = (url) => {
 
           <div className="btnEnter" onClick={handleButtonClick}>
             {/* <ButtonEnter titulo="Ver Catalogo" /> */}
-            <button className="Btn" />
+            <button className="Btn2" style={{fontSize:"20px"}} >Ver Carta</button>
           </div>
+            <Carousel logos={Logos}/>
           <div className="btnEnter2">
           <a
               className="Btn2"
               href={comercio?.attributes?.gps}
               target="_blank"
-            >📍{comercio?.attributes?.direccion} </a>
+            >📍Av.Colón 379</a>
           </div>
         </div>
         <Link to="/Comander" className="buttonComander">

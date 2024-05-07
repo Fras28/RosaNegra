@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Logo from "../assets/ElMundoParrilla-removebg-preview (2).png"
 import { NavLink } from "react-router-dom";
 import "./LandingPage.css";
 import { VerPedido } from "../BtnBag/BtnBag";
@@ -6,7 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 import Spinner from "../assets/Spinner/Spinner";
 import Horarios from "../BtnNavidad/Horarios";
 const API = process.env.REACT_APP_API_STRAPI;
-
 
 
 
@@ -23,7 +23,7 @@ export default function LandingPage(url) {
       <div className="naviLanding titCasa ">
         <div className="logoL">
           <NavLink to={`/${id}`}>
-            <img     src={`${API}${comercio?.attributes?.logo?.data?.attributes?.url}`} alt="" width="250px" />
+            <img     src={Logo} alt="" width="250px" />
           </NavLink>
         </div>
         <div className="navi2">
@@ -51,7 +51,7 @@ export default function LandingPage(url) {
 
       <div className="conteinerLB2  ">
         <div className="rowsCardL">
-          {categorias?.map((categoria, index) => (
+          {categorias?.slice(0,6).map((categoria, index) => (
             <NavLink
               className={`navLink `}
               to={
@@ -91,7 +91,7 @@ export default function LandingPage(url) {
         >
           <path d="M59 0.999995L0 1" stroke="#E88A23" />
         </svg>
-        <p className="naviTit3" style={{ backgroundColor:`${comercio?.attributes?.rgb}`}}> Seguinos en </p>
+        <p className="naviTit3"> Seguinos en </p>
         <svg
           width="59"
           height="2"

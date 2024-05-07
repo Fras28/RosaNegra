@@ -49,7 +49,7 @@ function App() {
   };
 
   return (
-    <div className="App"   style={{ backgroundImage: `url(${API+comercio?.attributes?.fondo?.data?.attributes?.formats?.large?.url})`,  backgroundPosition: "center", backgroundSize:"cover" }}>
+    <div className="App"   >
       <Switch>
         <Route exact path="/Comander" component={AdminPanel} />
         <Route exact path="/:id?" component={Inicio} />
@@ -65,7 +65,7 @@ function App() {
         <Route exact path="/:id/Landing/Comander" component={AdminPanel} />
         <Route exact path="/:id/bag" component={BagXX} />
       </Switch>
-      <Foot />
+      {/* <Foot /> */}
       <MyFoot />
     </div>
   );

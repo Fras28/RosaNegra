@@ -1,5 +1,6 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
+import Logo from "../../assets/ElMundoParrilla-removebg-preview (2).png"
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
@@ -119,7 +120,7 @@ export default function ModalConfirm({ total }) {
       >
         <DialogTitle className="infoNavi">
           <div>
-            <img src={`${API}${comercio?.attributes?.logo?.data?.attributes?.url}`} alt="logo Coqui Cakes" width="100px" />
+            <img src={Logo} alt="logo" width="100px" />
           </div>
           <div style={{ marginLeft: "30%" }}>
             <button className="exit" onClick={handleClose}>
