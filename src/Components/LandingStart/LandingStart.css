@@ -2,9 +2,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   display: flex;
   justify-content: center;
+  overflow: hidden; /* Añade esta propiedad */
 }
 .LandingStartContainer {
   height: 50%;
@@ -194,7 +194,18 @@
 .Btn:active {
   transform: scale(0.95);
 }
-
+.titleSectionStart{
+  font-size: 1rem;
+  color: orange;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-bottom: 3px solid white ;
+  border-top: 3px solid white ;
+  padding: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-image: url(../assets/bgNav.png);
+}
 @media (max-width: 600px) {
 
 
@@ -208,6 +219,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+    overflow: auto;
   }
   .BottomLanding {
     display: flex;
@@ -215,7 +227,10 @@
     padding-bottom: 5rem;
     gap: 1rem;
   }
-
+  .titleSectionStart{
+    max-width: 350px;
+    margin: auto;
+  }
   .contAlerStart {
     padding-top: 2rem;
   }

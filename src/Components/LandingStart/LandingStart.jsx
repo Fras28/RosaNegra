@@ -45,15 +45,15 @@ export const Inicio = (url) => {
       }`}
     >
       <div className="landingStart">
-        <div style={{ width: "100%" }}>
+        <div >
           {" "}
           <p
-            className="titleSection"
+            className="titleSectionStart"
             style={{
               justifyContent: "center",
               outline: "solid white 2px",
               border: "none",
-              backgroundColor:`${comercio?.attributes?.rgb}`
+              backgroundColor:`${comercio?.attributes?.rgb}`,
             }}
           >
             {"Contamos con opción de productos Sin T.A.C.C. En caso de que lo necesites, por favor indicarlo al momento de ordenar."}
@@ -75,7 +75,9 @@ export const Inicio = (url) => {
             {/* <ButtonEnter titulo="Ver Catalogo" /> */}
             <button className="Btn2" style={{fontSize:"20px"}} >Ver Carta</button>
           </div>
-            <Carousel logos={Logos}/>
+
+            <Carousel logos={Logos} maxWidth="100%"/>
+
           <div className="btnEnter2">
           <a
               className="Btn2"
