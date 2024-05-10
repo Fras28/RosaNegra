@@ -6,7 +6,7 @@ import "./LandingStart.css";
 import { useDispatch, useSelector } from "react-redux";
 import Logo from "../assets/ElMundoParrilla-removebg-preview (2).png"
 import Carousel from "../assets/Carousel/Carousel";
-import Morton from "../assets/dog face.png"
+import Morton from "../assets/PlaceHolder.jpg"
 const API = process.env.REACT_APP_API_STRAPI;
 export const Inicio = (url) => {
   const dispatch = useDispatch();
