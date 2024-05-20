@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const initialState = {
   allProduct: [],
   copyallProducts: [],
+  productCom:[],
   favProd: [],
   categorias:[],
   subCategorias:[],
@@ -38,6 +39,12 @@ export const dataSlice = createSlice({
       return {
         ...state,
         categorias: action.payload,
+      };
+    },
+    ProductsComander: (state, action) => {
+      return {
+        ...state,
+        productCom: action.payload,
       };
     },
 
@@ -162,6 +169,7 @@ const API_GENERAL = process.env.REACT_APP_API_STRAPI;
 const API_INICIO = process.env.REACT_APP_API_INICIO
 const API_2  = process.env.REACT_APP_API_CATEGORIA;
 const API_BASE = process.env.REACT_APP_API_COMERCIO
+const API_COMANDER_ART = process.env.REACT_APP_API_ARTICULOS_CATEGORIAS
 
 
 
@@ -179,6 +187,21 @@ export const asyncAllProducts= () => {
       const articulosExtraidos = extraerArticulos(response.data.data);
 
       return dispatch(allProducts(articulosExtraidos));
+    } catch (error) {
+      console.error("Error al obtener los artículos:", error);
+    }
+  };
+};
+
+export const asyncProductComander= () => {
+  return async function (dispatch) {
+    try {
+      console.log("ejecutando async asyncProductComander");
+      const response = await axios.get(API_COMANDER_ART);
+
+      const articulosExtraidos = response.data.data.attributes.categorias.data;
+
+      return dispatch(ProductsComander(articulosExtraidos));
     } catch (error) {
       console.error("Error al obtener los artículos:", error);
     }
@@ -530,7 +553,7 @@ export const asyncPedidoRealizado = (comanda) => {
 
 //----------------------------------------------------------------------------------------------------------------
 
-export const { allProducts, favProducts, cancelBagProducts, SearchProducts, allCategorias,allSubCategorias, fillComercio, fillClave, fillComanda,fillUsuario, fillProvee } =
+export const { allProducts, favProducts, cancelBagProducts, SearchProducts, allCategorias,allSubCategorias, fillComercio, fillClave, fillComanda,fillUsuario, fillProvee,ProductsComander } =
   dataSlice.actions;
 
 export default dataSlice.reducer;
